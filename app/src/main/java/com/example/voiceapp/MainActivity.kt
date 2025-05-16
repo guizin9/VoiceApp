@@ -35,11 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         ShortcutManagerCompat.pushDynamicShortcut(this, shortcutInfo)
 
-        val data: Uri? = intent?.data
-        Log.d("MainActivity", "Deeplink recebido: $data")
-
-        if (data != null && data.scheme == "voiceapp" && data.host == "abrir") {
-            binding.textView.text = "App aberto via Google Assistente!"
-        }
+        Log.d("MainActivity", "Deeplink recebido: ${shortcutIntent.data}")
     }
 }
