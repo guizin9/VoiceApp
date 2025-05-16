@@ -1,0 +1,13 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="abrir_app"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/label_short_app"
+        android:shortcutLongLabel="@string/label_long_app"
+        android:icon="@mipmap/ic_launcher">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="voiceapp://abrir" />
+    </shortcut>
+</shortcuts>
